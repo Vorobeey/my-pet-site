@@ -1,87 +1,195 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    margin: 0;
+}
+ main {
+    display: block;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+a {
+    background-color: transparent;
+}
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+b,
+strong {
+    font-weight: bolder;
+}
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+small {
+    font-size: 80%;
+}
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sub {
+    bottom: -0.25em;
+}
+sup {
+    top: -0.5em;
+}
+img {
+    border-style: none;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0; 
+}
+button,
+input {
+    overflow: visible;
+}
+button,
+select {
+    text-transform: none;
+}
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal; 
+}
+progress {
+    vertical-align: baseline;
+}
+textarea {
+    overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px; 
+} 
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+details {
+    display: block;
+}
+summary {
+    display: list-item;
+}
+template {
+    display: none;
+}
+[hidden] {
+    display: none;
+}
 @font-face {
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Comfortaa', cursive;
 }
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Ubuntu';
+    font-family: 'Comfortaa';
+    color: #63f0c8;
 }
-body {
-    margin: auto;
-    width: 1200px;
+.header {
+    margin: 60px 150px;
 }
-.header-inner {
-    margin-top: 100px;
+.header-top {
+    padding-bottom: 30px;
+    border-bottom: 1px solid #63f0c8;
 }
-.blog-logo {
-    display: flex
+.header-search {
+    text-align: left;
+    cursor: pointer;
+    width: 20%;
+    font-size: 15px;
 }
-.blog-logo h2 {
-    margin-left: 15px;
-    color: rgb(130, 127, 127);
-    letter-spacing: 4px;
-    font-size: 40px;
+.header-logo {
+    text-align: center;
+    margin-top: -40px;
 }
-.header-foot {
-    margin-top: 20px;
-    font-size: 16px;
-    padding-bottom: 60px;
-}
-main {
-    margin-top: 50px;
-}
-.main-inner {
+.logos {
     display: flex;
-}
-.main-news {
-    max-width: 800px;
-    margin-right: 100px;
-}
-.news-title h2 {
-    font-weight: normal;
-    font-size: 30px;
-}
-.news-date {
-    margin-top: 5px;
-}
-.news-publish-date {
-    color: rgb(130, 127, 127);
-}
-.news-content {
-    margin-top: 50px;
-}
-.content {
-    margin-top: 15px;
-    text-align: justify;
-}
-.main-nav {
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
-}
-.nav-search {
-    padding: 10px 19px;
-    border: 1px solid #eee;
-}
-#site-search {
-    padding-top: 5px;
-    border-color: #eee;;
-}
-.nav-soc {
-    border-left: 1px solid #eee;
-    border-right: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    padding: 20px 19px;
-}
-.vk-logo {
-    float: left;
-}
-.tg-logo {
-    margin-left: 12%;
-}
-.gmail-logo {
     float: right;
 }
-.footer-inner {
-    margin-top: 100px;
+.logos a {
+    padding: 0px 20px 0px 0px;
+    margin-top: -38px;
+}
+.nav-item {
+    display: flex;
+    padding: 10px 10px;
+    border-bottom: 1px solid #63f0c8;
+    justify-content: center;
+    justify-content: space-between;
+}
+.nav-item p {
+    padding: 25px 25px;
+    transition: 0s;
+}
+.nav-item p:hover {
+    background: rgb(61, 70, 62);
+
 }
