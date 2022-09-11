@@ -188,6 +188,7 @@ template {
 .nav-item p {
     padding: 25px 25px;
     transition: 0s;
+    font-size: 25px;
 }
 .nav-item p:hover {
     background: rgb(61, 70, 62);
