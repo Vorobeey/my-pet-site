@@ -175,7 +175,7 @@ template {
     float: right;
 }
 .logos a {
-    padding: 0px 20px 0px 0px;
+    padding: 0px 0px 0px 20px;
     margin-top: -38px;
 }
 .nav-item {
@@ -186,11 +186,110 @@ template {
     justify-content: space-between;
 }
 .nav-item p {
-    padding: 25px 25px;
+    padding: 20px 25px;
     transition: 0s;
-    font-size: 25px;
+    font-size: 20px;
 }
 .nav-item p:hover {
-    background: rgb(61, 70, 62);
-
+    background: rgb(51, 78, 52);
+}
+.main-container {
+    display: flex;
+}
+.container1 {
+    margin: 0px 150px;
+    display: flex;
+    position: relative;
+    justify-content: left;
+    flex-direction: column;
+}
+.blog1 {
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+}
+.blog1 img {
+    transition: .5s;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.blog1-text-center {
+    position: absolute;
+    transform: translate(20%, -300%);
+    border: 2px solid white;
+    padding: 30px 30px;
+    color: white;
+    letter-spacing: 3px;
+    transition: .7s;
+}
+.blog1:hover img {
+    transform: scale(1.2);
+}
+.blog1:hover .blog1-text-center {
+    background-color:#63f0c8
+}
+.blog2 {
+    display: inline-block;
+    width: 400px;
+    height: 350px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+.blog2 img {
+    transition: .5s;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+.blog2-text-center {
+    position: absolute;
+    transform: translate(20%, -300%);
+    border: 2px solid white;
+    padding: 30px 30px;
+    color: white;
+    letter-spacing: 3px;
+    transition: .7s;
+}
+.blog2:hover img {
+    transform: scale(1.2);
+}
+.blog2:hover .blog1-text-center {
+    background-color:#63f0c8
+}
+.container2 {
+    margin: 0px -150px;
+    display: flex;
+    position: relative;
+    justify-content: right;
+}
+.blog3 {
+    display: inline-block;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    margin-left: 30px;
+}
+.blog3 img {
+    transition: .5s;
+    width: 800px;
+    height: 400px;
+    object-fit: cover;
+    object-position: 0px -150px;
+}
+.text-center {
+    position: absolute;
+    transform: translate(170%, -300%);
+    border: 2px solid white;
+    padding: 30px 30px;
+    color: white;
+    letter-spacing: 3px;
+    transition: .7s;
+}
+.blog3:hover img {
+    transform: scale(1.2);
+}
+.blog3:hover .text-center {
+    background-color:#63f0c8
 }
