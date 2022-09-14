@@ -5,7 +5,7 @@ html {
 body {
     margin: 0;
 }
- main {
+main {
     display: block;
 }
 h1 {
@@ -152,37 +152,32 @@ template {
     margin: 0;
     font-family: 'Comfortaa';
     color: #63f0c8;
+    box-sizing: border-box;
 }
 .header {
-    margin: 60px 150px;
+    margin: 30px 150px;
 }
-.header-top {
-    padding-bottom: 30px;
-    border-bottom: 1px solid #63f0c8;
+.search-and-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items:baseline;
 }
 .header-search {
-    text-align: left;
     cursor: pointer;
-    width: 20%;
     font-size: 15px;
 }
 .header-logo {
     text-align: center;
-    margin-top: -40px;
 }
-.logos {
-    display: flex;
-    float: right;
-}
-.logos a {
-    padding: 0px 0px 0px 20px;
-    margin-top: -38px;
+.header-logos a {
+    margin: 0px 5px;
 }
 .nav-item {
     display: flex;
+    margin-top: 20px;
     padding: 10px 10px;
+    border-top: 1px solid #63f0c8;
     border-bottom: 1px solid #63f0c8;
-    justify-content: center;
     justify-content: space-between;
 }
 .nav-item p {
@@ -196,11 +191,14 @@ template {
 .nav-item a {
     text-decoration: none;
 }
+.main {
+    margin: 0px 150px;
+}
 .main-container {
     display: flex;
+    justify-content: center;
 }
-.container1 {
-    margin: 0px 150px;
+.container-letf {
     display: flex;
     position: relative;
     justify-content: left;
@@ -261,8 +259,7 @@ template {
 .blog2:hover .blog1-text-center {
     background-color:#63f0c8
 }
-.container2 {
-    margin: 0px -150px;
+.container-right {
     display: flex;
     position: relative;
     justify-content: right;
