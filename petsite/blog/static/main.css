@@ -1,3 +1,4 @@
+/*NORMALIZE.CSS*/
 html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
@@ -144,6 +145,9 @@ template {
 [hidden] {
     display: none;
 }
+/*NORMALIZE.CSS*/
+
+
 @font-face {
     font-family: 'Comfortaa', cursive;
 }
@@ -377,5 +381,5 @@ template {
 .footer-text {
     margin: -20px 0px;
     text-align: center;
-    color: white;
+    color: rgb(175, 170, 170);
 }
