@@ -151,14 +151,14 @@ template {
     padding: 0;
     margin: 0;
     font-family: 'Comfortaa';
-    color: #3cbe99;
+    color: #63f0c8;
 }
 .header {
     margin: 60px 150px;
 }
 .header-top {
     padding-bottom: 30px;
-    border-bottom: 1px solid #3cbe99;
+    border-bottom: 1px solid #63f0c8;
 }
 .header-search {
     text-align: left;
@@ -181,7 +181,7 @@ template {
 .nav-item {
     display: flex;
     padding: 10px 10px;
-    border-bottom: 1px solid #3cbe99;
+    border-bottom: 1px solid #63f0c8;
     justify-content: center;
     justify-content: space-between;
 }
@@ -192,6 +192,9 @@ template {
 }
 .nav-item p:hover {
     background: rgb(51, 78, 52);
+}
+.nav-item a {
+    text-decoration: none;
 }
 .main-container {
     display: flex;
@@ -235,7 +238,7 @@ template {
     width: 400px;
     height: 350px;
     overflow: hidden;
-    margin-top: 30px;
+    margin-top: 15px;
 }
 .blog2 img {
     transition: .5s;
@@ -269,7 +272,7 @@ template {
     width: 800px;
     height: 400px;
     overflow: hidden;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .blog3 img {
     transition: .5s;
