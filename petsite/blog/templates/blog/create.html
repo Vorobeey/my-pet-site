@@ -67,9 +67,11 @@
                     <div class="create-blogs">
                         <h1>Создать блог</h1>
                         <form method="post">
-                            <input type="text" placeholder="Введите название" class="form-control"><br>
-                            <textarea placeholder="Введите описание" class="form-control"></textarea><br>
+                            {% csrf_token %}
+                            {{ form.title }}<br>
+                            {{ form.content }}<br>
                             <button type="submit" class="btn btn-success">Добавить</button>
+                            <span>{{ error }}</span>
                         </form>
                     </div>
                 </div>

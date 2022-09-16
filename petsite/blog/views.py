@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .forms import BlogForm
 from .models import Blog
 
 
@@ -11,4 +12,18 @@ def index(request):
 
 
 def create(request):
-    return render(request, 'blog/create.html')
+    error = ''
+    if request.method == 'POST':
+        form = BlogForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('home')
+        else:
+            error = 'Форма была неверной'
+
+    form = BlogForm()
+    context = {
+        'form': form,
+        'error': error,
+    }
+    return render(request, 'blog/create.html', context)
