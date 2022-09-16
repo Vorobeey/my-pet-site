@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/main.css">
+    <link rel="stylesheet" href="../../static/create.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <title>{{ title }}</title>
+    <title>Create</title>
 </head>
 <body>
     <div class="body">
@@ -64,23 +64,13 @@
         <main class="main">
             <div class="main-container">
                 <div class="main-content">
-                    <div class="main-left-box">
-                        <div class="left-up-box">
-                            {% for i in blog1 %}
-                            <div class="title-blog"><a href="#">{{ i.title }}</a></div>
-                            {% endfor %}
-                        </div>
-                        <div class="left-down-box">
-                            {% for i in blog2 %}
-                            <div class="title-blog"><a href="#">{{ i.title }}</a></div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="right-up-box">
-                        {% for i in blog3 %}
-                        <div class="title-blog"><a href="#">{{ i.title }}</a> </div>
-                        {% endfor %}
-                    </div>
+                    <div class="create-blogs">
+                        <h1>Создать блог</h1>
+                        <form method="post">
+                            <input type="text" placeholder="Введите название" class="form-control"><br>
+                            <textarea placeholder="Введите описание" class="form-control"></textarea><br>
+                            <button type="submit" class="btn btn-success">Добавить</button>
+                        </form>
                     </div>
                 </div>
             </div>
