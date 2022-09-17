@@ -212,7 +212,7 @@ body {
 .main {
     display: block;
     flex: 1 1 auto;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .main-container {
     max-width: 1440px;
@@ -230,13 +230,37 @@ body {
 .left-up-box {
     width: 525px;
     height: 300px;
-    background-image: url(../static/img/blog1.jpg);
-    background-size: cover;
-    background-position: 0% 25%;
     position: relative;
     overflow: hidden;
 }
-
+.left-down-box {
+    width: 525px;
+    height: 300px;
+    margin: 15px 0px 0px 0px;
+    position: relative;
+    overflow: hidden;
+}
+.right-box {
+    width: 900px;
+    height: 615px;
+    margin: 0px 0px 0px 15px;
+    position: relative;
+    overflow: hidden;
+}
+.img-responsive {
+    width: 100%;
+    max-width: 525px;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+.img-responsive-big {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    min-height: 615px;
+    object-fit: cover;
+}
 .title-blog a {
     border: 2px solid white;
     box-shadow: 1px 1px 1px black;
@@ -253,27 +277,8 @@ body {
     text-decoration: none;
     transition: .7s;
 }
-.title-blog:hover a {
+.title-blog a:hover {
     background-color: #63f0c8;
-}
-.left-down-box {
-    width: 525px;
-    height: 300px;
-    margin: 15px 0px 0px 0px;
-    background-image: url(../static/img/it.jpg);
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-}
-.right-up-box {
-    width: 900px;
-    height: auto;
-    margin: 0px 0px 0px 15px;
-    background-image: url(../static/img/face.png);
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-    overflow: hidden;
 }
 .footer {
     background-color: #245e4d;

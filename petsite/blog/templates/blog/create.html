@@ -66,10 +66,9 @@
                 <div class="main-content">
                     <div class="create-blogs">
                         <h1>Создать блог</h1>
-                        <form method="post">
+                        <form method="post" enctype="multipart/form-data">
                             {% csrf_token %}
-                            {{ form.title }}<br>
-                            {{ form.content }}<br>
+                            {{ form.as_p }}
                             <button type="submit" class="btn btn-success">Добавить</button>
                             <span>{{ error }}</span>
                         </form>
