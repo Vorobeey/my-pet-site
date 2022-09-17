@@ -66,7 +66,7 @@
                 <div class="main-content">
                     <div class="main-left-box">
                         <div class="left-up-box">
-                            {% for i in blog1 %}
+                            {% for i in blog2 %}
                             <div class="title-blog">
                                 <img src="{{ i.photo.url }}" class="img-responsive" alt="">
                                 <a href="#">
@@ -76,7 +76,7 @@
                             {% endfor %}
                         </div>
                         <div class="left-down-box">
-                            {% for i in blog2 %}
+                            {% for i in blog3 %}
                             <div class="title-blog">
                                 <img src="{{ i.photo.url }}" class="img-responsive" alt="">
                                 <a href="#">
@@ -87,7 +87,7 @@
                         </div>
                     </div>
                     <div class="right-box">
-                        {% for i in blog3 %}
+                        {% for i in blog1 %}
                         <div class="title-blog">
                             <img src="{{ i.photo.url }}" class="img-responsive-big" alt="">
                             <a href="#">
@@ -96,9 +96,6 @@
                         </div>
                         {% endfor %}
                     </div>
-                    <!-- {% for i in blog1 %}
-                    <div class="title-blog"><a href="#"><img src="{{ i.photo.url }}" class="img-responsive" widht="300px" alt="_"></a></div>
-                    {% endfor %} -->
                 </div>
             </div>
         </main>

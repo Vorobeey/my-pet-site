@@ -254,12 +254,19 @@ body {
     max-height: 300px;
     object-fit: cover;
 }
+.title-blog:hover {
+    transform: scale(1.2);
+}
 .img-responsive-big {
     width: 100%;
     max-width: 900px;
     height: auto;
     min-height: 615px;
+    max-height: 615px;
     object-fit: cover;
+}
+.title-blog {
+    transition: .7s;
 }
 .title-blog a {
     border: 2px solid white;
@@ -275,7 +282,6 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-decoration: none;
-    transition: .7s;
 }
 .title-blog a:hover {
     background-color: #63f0c8;
