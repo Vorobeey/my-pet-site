@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../static/main.css">
+    <link rel="stylesheet" href="../../static/about_me.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <title>{{ title }}</title>
+    <title>Контакты</title>
 </head>
 <body>
     <div class="body">
@@ -31,7 +31,7 @@
                 <nav class="nav">
                     <div class="nav-container">
                         <div class="nav-item">
-                            <a href="#"><div class="blog-div">
+                            <a href="{% url 'home' %}"><div class="blog-div">
                                 <p class="blog">
                                     <span>BLOG</span>
                                 </p>
@@ -64,38 +64,13 @@
         <main class="main">
             <div class="main-container">
                 <div class="main-content">
-                    <div class="main-left-box">
-                        <div class="left-up-box">
-                            {% for i in blog2 %}
-                            <div class="title-blog">
-                                <img src="{{ i.photo.url }}" class="img-responsive" alt="">
-                                <a href="#">
-                                    {{ i.title }}
-                                </a>
-                            </div>
-                            {% endfor %}
-                        </div>
-                        <div class="left-down-box">
-                            {% for i in blog3 %}
-                            <div class="title-blog">
-                                <img src="{{ i.photo.url }}" class="img-responsive" alt="">
-                                <a href="#">
-                                    {{ i.title }}
-                                </a>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    <div class="right-box">
-                        {% for i in blog1 %}
-                        <div class="title-blog">
-                            <img src="{{ i.photo.url }}" class="img-responsive-big" alt="">
-                            <a href="#">
-                                {{ i.title }}
-                            </a>
-                        </div>
-                        {% endfor %}
-                    </div>
+                    <h1>about me</h1>
+                    <p>Меня зовут Воробьев Александр и вы на моем pet проекте!
+                        Мне 29 лет и я живу в Санкт-Петербурге.
+                        В данный момент я работаю с блогерами на Twitch и самостоятельно учусь на IT-разработчика.
+                        Моя цель: войти в IT. И я достигну нее, я в это верю. Backend или Frontend - не так важно.
+                        Я готов учиться любой позиции и вникать в нее полностью.
+                    </p>
                 </div>
             </div>
         </main>

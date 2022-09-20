@@ -29,3 +29,11 @@ def create(request):
         'error': error,
     }
     return render(request, 'blog/create.html', context)
+
+
+def contacts(request):
+    return render(request, 'blog/contacts.html')
+
+
+def about_me(request):
+    return render(request, 'blog/about_me.html')
